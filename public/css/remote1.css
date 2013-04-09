@@ -1,26 +1,27 @@
 html, body {
-  font-size: 72pt;
-
+  font-size: 112pt;
 }
 
 
 
 .up {
+  top: 25%;
   margin-left: auto;
-  width: 100px;
+
   margin-right: auto;
 }
 
 .down {
+  bottom: 25%;
   margin-left: auto;
-  width: 100px;
+
   margin-right: auto;
 }
 
 .left {
-  float: left;
+  left: 5%;
 }
 
 .right {
-  float: right;
+  right: 95%;
 }
