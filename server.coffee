@@ -18,6 +18,8 @@ app.use express.static('public')
 app.use express.bodyParser()
 app.use express.methodOverride()
 
+remote = fs.readFileSync 'remote.html', 'utf-8'
+
 getQR = (id, text, cb) ->
   if qrcodes[id]
     cb qrcodes[id]
@@ -32,7 +34,7 @@ app.get '/:apikey/qrcode', (req, res, next) ->
     res.end data
 
 app.get '/remote/:apikey', (req, res) ->
-  res.end 'up down left right select'
+  res.end remote
 
 process.on 'uncaughtException', (err) ->
   console.log 'Uncaught exception:'
