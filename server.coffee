@@ -28,7 +28,7 @@ getQR = (id, text, cb) ->
         cb qrcodes[id]
 
 app.get '/:apikey/qrcode', (req, res, next) ->
-  getQR req.params.apikey, "http://localhost:8090/remote/#{req.params.apikey}", (data) ->
+  getQR req.params.apikey, "http://oic.io:8090/remote/#{req.params.apikey}", (data) ->
     res.end data
 
 app.get '/remote/:apikey', (req, res) ->
