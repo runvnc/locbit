@@ -1,0 +1,26 @@
+html, body {
+  font-size: 72pt;
+
+}
+
+
+
+.up {
+  margin-left: auto;
+  width: 100px;
+  margin-right: auto;
+}
+
+.down {
+  margin-left: auto;
+  width: 100px;
+  margin-right: auto;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
