@@ -2,8 +2,6 @@ html, body {
   font-size: 112pt;
 }
 
-
-
 .up {
   position: absolute;
   top: 25%;
@@ -22,10 +20,20 @@ html, body {
 
 .left {
   position: absolute;
+  top: 40%;
   left: 5%;
 }
 
 .right {
   position: absolute;
-  right: 95%;
+  top: 40%;
+  right: 5%;
 }
+
+.select {
+  position: absolute;
+  top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
