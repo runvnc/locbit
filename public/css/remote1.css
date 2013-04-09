@@ -5,6 +5,7 @@ html, body {
 
 
 .up {
+  position: absolute;
   top: 25%;
   margin-left: auto;
 
@@ -12,6 +13,7 @@ html, body {
 }
 
 .down {
+  position: absolute;
   bottom: 25%;
   margin-left: auto;
 
@@ -19,9 +21,11 @@ html, body {
 }
 
 .left {
+  position: absolute;
   left: 5%;
 }
 
 .right {
+  position: absolute;
   right: 95%;
 }
