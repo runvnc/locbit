@@ -5,17 +5,13 @@ html, body {
 .up {
   position: absolute;
   top: 25%;
-  margin-left: auto;
-
-  margin-right: auto;
+  left: 48%;
 }
 
 .down {
   position: absolute;
   bottom: 25%;
-  margin-left: auto;
-
-  margin-right: auto;
+  left: 48%;
 }
 
 .left {
@@ -33,7 +29,6 @@ html, body {
 .select {
   position: absolute;
   top: 40%;
-  margin-left: auto;
-  margin-right: auto;
+  left: 48%;
 }
 
