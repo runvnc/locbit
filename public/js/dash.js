@@ -54,9 +54,5 @@ select = function() {
 
 $(document).ready(function() {
   $('li').first().addClass('active');
-  $('.up').click(function() { now.sendMsg('up'); });
-  $('.down').click(function() { now.sendMsg('down'); });
-  $('.left').click(function() { now.sendMsg('left'); });
-  $('.right').click(function() { now.sendMsg('right'); });
 });
 
