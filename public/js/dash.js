@@ -45,7 +45,7 @@ up = function () {
 }
 
 down = function () {
-  wapActive($('.active').next(), $('.active'));
+  swapActive($('.active').next(), $('.active'));
 }
 
 select = function() {
