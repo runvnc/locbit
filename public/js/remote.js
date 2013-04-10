@@ -1,3 +1,7 @@
+window.onerror = function (errorMsg, url, lineNumber) {
+  alert(errorMsg + ' ' + lineNumber);
+}
+
 now.ready(function(){
   now.sendMsg("Hello from remote.");
 });
@@ -11,3 +15,4 @@ $(document).ready(function(){
     now.sendMsg('up');
   });
 });
+
