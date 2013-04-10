@@ -25,19 +25,19 @@ now.receiveMsg = function(msg){
 }
 
 left = function () {
-  $('.active').removeClass('.active').prev().addClass('.active');
+  $('.active').removeClass('active').prev().addClass('active');
 }
 
 right = function () {
-  $('.active').removeClass('.active').next().addClass('.active');
+  $('.active').removeClass('active').next().addClass('active');
 }
 
 up = function () {
-  $('.active').removeClass('.active').prev().addClass('.active');
+  $('.active').removeClass('active').prev().addClass('active');
 }
 
 down = function () {
-  $('.active').removeClass('.active').next().addClass('.active');
+  $('.active').removeClass('active').next().addClass('active');
 }
 
 select = function() {
@@ -45,7 +45,7 @@ select = function() {
 }
 
 $(document).ready(function() {
-  $('li').first().addClass('.active');
+  $('li').first().addClass('active');
   $('.up').click(function() { now.sendMsg('up'); });
   $('.down').click(function() { now.sendMsg('down'); });
   $('.left').click(function() { now.sendMsg('left'); });
