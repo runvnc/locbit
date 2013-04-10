@@ -9,7 +9,10 @@ interval = (ms, func) -> setInterval func, ms
 qrcodes = {}
 
 express = require 'express'
+
 app = express()
+http = require 'http'
+server = http.createServer app
 
 app.use express.static('public')
 app.use express.bodyParser()
@@ -21,7 +24,7 @@ socketoptions =
     'browser client etag' : true
     'browser client cache' : true
 
-everyone = now.initialize app, socketoptions
+everyone = now.initialize server, socketoptions
 
 remote = fs.readFileSync 'remote.html', 'utf-8'
 
@@ -52,5 +55,5 @@ process.on 'uncaughtException', (err) ->
   console.log err
   console.log err.stack
 
-app.listen 8090
+server.listen 8090
 console.log 'Listening on port 8090'
