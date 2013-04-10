@@ -25,7 +25,7 @@ now.receiveMsg = function(msg){
 }
 
 swapActive = function (newActive, old) {
-  old.removeClass(active);
+  old.removeClass('active');
   newActive.addClass('active')
 }
 
