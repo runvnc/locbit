@@ -26,7 +26,10 @@ now.receiveMsg = function(msg){
 
 swapActive = function (newActive, old) {
   old.removeClass('active');
-  newActive.addClass('active')
+  newActive.addClass('active');
+  if ($('.active').length == 0) {
+    $('li').first().addClass('active');
+  }
 }
 
 left = function () {
