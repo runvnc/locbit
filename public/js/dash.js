@@ -3,6 +3,8 @@ now.ready(function(){
 });
 
 now.receiveMsg = function(msg){
+  console.log('received msg');
+  console.log(msg);
   switch (msg) {
     case 'up':
       up();

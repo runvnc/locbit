@@ -15,5 +15,6 @@ $(document).ready(function(){
   $('.down').click(function() { now.sendMsg('down'); });
   $('.left').click(function() { now.sendMsg('left'); });
   $('.right').click(function() { now.sendMsg('right'); });
+  $('.select').click(function() { now.sendMsg('select'); });
 });
 
