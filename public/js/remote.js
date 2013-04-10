@@ -11,8 +11,9 @@ now.receiveMsg = function(msg){
 }
 
 $(document).ready(function(){
-  $('.up').click(function() {
-    now.sendMsg('up');
-  });
+  $('.up').click(function() { now.sendMsg('up'); });
+  $('.down').click(function() { now.sendMsg('down'); });
+  $('.left').click(function() { now.sendMsg('left'); });
+  $('.right').click(function() { now.sendMsg('right'); });
 });
 

@@ -27,6 +27,7 @@ socketoptions =
 everyone = now.initialize server, socketoptions
 
 remote = fs.readFileSync 'remote.html', 'utf-8'
+selector = fs.readFileSync 'public/dash.html', 'utf-8'
 
 getQR = (id, text, cb) ->
   if qrcodes[id]
@@ -43,6 +44,9 @@ app.get '/:apikey/qrcode', (req, res, next) ->
 
 app.get '/remote/:apikey', (req, res) ->
   res.end remote
+
+app.get '/', (req, res) ->
+  res.end selector
 
 everyone.now.sendMsg = (msg, callback) ->
   console.log 'sendMsg '

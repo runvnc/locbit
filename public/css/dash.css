@@ -1,0 +1,23 @@
+html, body {
+  background-color: #333;
+  color: #eee;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.menu li {
+  width: 150px;
+  height: 120px;
+  border: 1px dotted #ddd;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  webkit-border-radius: 15px;
+}
+
+.menu li .active {
+  width: 150px;
+  height: 120px;
+  border: 2px solid yellow;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  webkit-border-radius: 15px;
+}
