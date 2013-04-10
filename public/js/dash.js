@@ -49,7 +49,7 @@ down = function () {
 }
 
 select = function() {
-  $('.active').children('a').click();
+  window.location.href = $('.active').find('a').attr('href');
 }
 
 $(document).ready(function() {
