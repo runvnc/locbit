@@ -24,20 +24,25 @@ now.receiveMsg = function(msg){
   }
 }
 
+swapActive = function (newActive, old) {
+  old.removeClass(active);
+  newActive.addClass('active')
+}
+
 left = function () {
-  $('.active').removeClass('active').prev().addClass('active');
+  swapActive($('.active').prev(), $('.active'));
 }
 
 right = function () {
-  $('.active').removeClass('active').next().addClass('active');
+  swapActive($('.active').next(), $('.active'));
 }
 
 up = function () {
-  $('.active').removeClass('active').prev().addClass('active');
+  swapActive($('.active').prev(), $('.active'));
 }
 
 down = function () {
-  $('.active').removeClass('active').next().addClass('active');
+  wapActive($('.active').next(), $('.active'));
 }
 
 select = function() {
