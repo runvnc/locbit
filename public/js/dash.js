@@ -49,7 +49,7 @@ down = function () {
 }
 
 select = function() {
-  $('.active').click();
+  $('.active').children('a').click();
 }
 
 $(document).ready(function() {
